@@ -1,12 +1,17 @@
 * {
     box-sizing: border-box;
 }
+*+*{
+    margin: 0;
+}
 
 /*Top of page styles*/
 #top-header{
     display: flex;
     flex-direction: column;
     background-color: #F3CEF7;
+    position: relative;
+    padding-bottom: 0.5em;
 }
 #top-top{
     padding-top: 1em;
@@ -44,12 +49,13 @@
         list-style-type: none;
         align-self: flex-end;
     }
-    .navigation > *{
-        padding-right: 1.5em;
+    .navigation > li{
+        margin-top: 0.8em;
     }
     .navigation > li > a{
         text-wrap: nowrap;
         text-decoration: none;
+        color: #2b0653;
     }
 
 /*intro styles*/
@@ -61,6 +67,8 @@
     padding-top: 2em;
     padding-bottom: 2em;
     background-image: url(../assets/VanGogh-style-painting.jpg);
+    background-color: #0000004f;
+    background-blend-mode: overlay;
     background-repeat: round;
 }
 #brief-intro > *{
@@ -80,7 +88,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    a
 }
 .art > section > img{
     max-width: 100%;
@@ -88,8 +95,13 @@
 .art > section > h4{
     transform: translate(0,-50px);
     margin: 0;
+    padding: 0;
     color: #91e39b;
 }
+    /*Image spacing*/
+    .art > section > img{
+        padding: 0.5em;
+    }
 
 /* view more link styles*/
 #view-more-art{
@@ -97,8 +109,20 @@
     background-color: #F3CEF7;
     padding: 0.25em;
 }
+/*bottom bar styles*/
+#bottom-bar{
+    background-color: #F3CEF7;
+    height: 4em;
+}
 
 /*footer styles*/
+footer{
+    text-align: center;
+}
+    /*top link styles*/
+    #top-link{
+        
+    }
     /*contact icons styles*/
     #contact-icons{
         list-style-type: none;
@@ -110,15 +134,58 @@
     }
     /*copyright styles*/
     #copyright{
-        text-align: center;
+        padding: 1em;
     }
+/*styles for current page*/
+.current-page{
+    font-weight: bold;
+}
+
+/*about page styles*/
+#headshot > img{
+    width: 100%;
+}
+
+/*contact page styles*/
+#contactMe{
+    text-align: center;
+}
+
+#contact-sections > section{
+    text-align: left;
+}
+#contact-sections > section > *{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#contact-sections > #contact-form{
+    
+}
+#contact-form > form{
+    display: flex;
+    flex-direction: column;
+}
+#contact-form > form > section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+#message{
+}
+#submit-button{
+    max-width: 25%;
+}
 
     /*media queries*/
     @media(min-width:768px){
         .navigation{
             display: flex;
+            flex-direction: row;
             margin-right: 0;
             align-self: center;
+        }
+        .navLinks{
+            position: relative;
         }
         #top-top > button{
             display: none;
@@ -126,6 +193,23 @@
         .navigation > *{
             padding-right: 3em;
             font-size: 1.5em;
+        }
+        #current-page{
+            padding-bottom: 0.7em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+        }
+        #about-section{
+            display: grid;
+            grid-template-columns: 45% 55%;
+        }
+        #about-section > #headshot{
+            padding-right: 3em;
+        }
+        #contact-sections{
+            display: grid;
+            grid-template-columns: 65% 35%;
         }
     }
 
