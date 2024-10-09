@@ -89,7 +89,11 @@
     flex-direction: column;
     align-items: center;
 }
-.art > section > img{
+.art > section > a >img{
+    max-width: 100%;
+    padding: 0.5em;
+}
+.art > section >img{
     max-width: 100%;
 }
 .art > section > h4{
@@ -175,7 +179,52 @@ footer{
 #submit-button{
     max-width: 25%;
 }
-
+/*lightbox styles*/
+#overlay{
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(0, 0, 0, 0.722) 
+}
+#closeOverlay{
+    position: fixed;
+    top: 25%;
+    left: 80%;
+    display: none;
+}
+#lightBox-img1, #lightBox-img2, #lightBox-img3, #lightBox-img4, #lightBox-img5, #lightBox-img6, #lightBox-img7, #lightBox-img8, #lightBox-img9, #lightBox-img10{
+    position: relative;
+    max-width: 60%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    padding: 2em;
+    display: none;
+}
+/*VanGogh slideshow styles*/
+.VanGogh{
+    max-width: 100%;
+    display: none;
+    margin: 0.5em;
+}
+#slideshow >img{
+    position: relative;
+    z-index: 0;
+}
+.showing{
+    max-width: 100%;
+    margin: 0.5em;
+    display: none;
+}
+.darken{
+    display: none;
+}
+.show{
+    display: block;
+}
     /*media queries*/
     @media(min-width:768px){
         .navigation{
@@ -211,5 +260,18 @@ footer{
             display: grid;
             grid-template-columns: 65% 35%;
         }
+        #lightBox-img1, #lightBox-img2, #lightBox-img3, #lightBox-img4, #lightBox-img5, #lightBox-img6, #lightBox-img7, #lightBox-img8, #lightBox-img9, #lightBox-img10{
+            max-width: 35%;
+            top: 16%;
+            left: 35%;
+            right: 35%;
+        }
+        #closeOverlay{
+            top: 20%;
+            left: 90%;
+        }
+        .VanGogh{
+            max-width: 100%;
+            display: none;
+        }
     }
-
