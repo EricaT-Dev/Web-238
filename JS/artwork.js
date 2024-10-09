@@ -1,8 +1,5 @@
 $(document).ready(function(){
     //descriptions on hover for rest of images
-    $(".art-pieces:nth-child(4)").hover(function(){
-        $("#desc4").toggle();
-    })
     $(".art-pieces:nth-child(5)").hover(function(){
         $("#desc5").toggle();
     })
@@ -14,5 +11,8 @@ $(document).ready(function(){
     })
     $(".art-pieces:nth-child(8)").hover(function(){
         $("#desc8").toggle();
+    })
+    $(".art-pieces:nth-child(9)").hover(function(){
+        $("#desc9").toggle();
     })
 });
