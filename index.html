@@ -10,72 +10,100 @@
         <title>Portfolio: Erica Talley</title>
     </head>
     <body>
-        <section id="top-header">
-            <section id="top-top">
-                <a href="index.html"><img src="assets/Name Logo.png"></a>
-                <button id="dropdown-button">
-                    <span class="menu-lines"></span>
-                    <span class="menu-lines"></span>
-                    <span class="menu-lines"></span>
-                </button>
+        <div id="overlay">
+            <button id="closeOverlay">Close</button>
+            <img class="lightBox-imgs" id="lightBox-img1" src="assets/Sketch-woman.jpg">
+            <img class="lightBox-imgs" id="lightBox-img2" src="assets/Painting-rose with thorns.jpg">
+            <img class="lightBox-imgs" id="lightBox-img3" src="assets/Sketch-eyeball - 2.jpg">
+            <img class="lightBox-imgs" id="lightBox-img4" src="assets/Painting-emerging face.jpg">
+            <img class="lightBox-imgs" id="lightBox-img10" src="assets/VanGoghLamp-1.jpg">
+        </div>
+            <section id="top-header">
+                <section id="top-top">
+                    <a href="index.html"><img src="assets/Name Logo.png"></a>
+                    <button id="dropdown-button">
+                        <span class="menu-lines"></span>
+                        <span class="menu-lines"></span>
+                        <span class="menu-lines"></span>
+                    </button>
+                </section>
+                <ul class="navigation">
+                    <li>
+                        <a id="homepage" class="current-page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a id="art-page" href="artwork.html">My Artwork</a>
+                    </li>
+                    <li>
+                        <a id="about-page" href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a id="contact-page" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
             </section>
-            <ul class="navigation">
-                <li>
-                    <a id="homepage" class="current-page" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a id="art-page" href="artwork.html">My Artwork</a>
-                </li>
-                <li>
-                    <a id="about-page" href="about.html">About Me</a>
-                </li>
-                <li>
-                    <a id="contact-page" href="contact.html">Contact Me</a>
-                </li>
-            </ul>
-        </section>
-        <section id="brief-intro">
-            <h2>Welcome!</h2>
-            <p>My Name is Erica Talley. I am a student with a passion for art. 
-                While I am not planning to pursue art professionally, I would still like to share my work with the world. 
-                Feel free to take a look if you are interested.</p>
-        </section>
-        <section class="art">
-            <section class="art-pieces" id="art-1">
-                <img src="assets/Sketch-woman.jpg">
-                <h4 id="desc1" class="img-desc">desc</h4>
+            <section id="brief-intro">
+                <h2>Welcome!</h2>
+                <p>My Name is Erica Talley. I am a student with a passion for art. 
+                    While I am not planning to pursue art professionally, I would still like to share my work with the world. 
+                    Feel free to take a look if you are interested.</p>
             </section>
-            <section class="art-pieces" id="art-2">
-                <img src="assets/Painting-rose with thorns.jpg">
-                <h4 id="desc2" class="img-desc">desc</h4>
+            <section class="art">
+                <section class="art-pieces" id="art-1">
+                    <a id="imageOneLink" class="imgLightbox" href="#">
+                        <img src="assets/Sketch-woman.jpg">
+                    </a>
+                    <h4 id="desc1" class="img-desc">desc</h4>
+                </section>
+                <section class="art-pieces" id="art-2">
+                    <a id="imageTwoLink" class="imgLightbox" href="#">
+                        <img src="assets/Painting-rose with thorns.jpg">
+                    </a>
+                    <h4 id="desc2" class="img-desc">desc</h4>
+                </section>
+                <section class="art-pieces" id="art-3">
+                    <a id="imageThreeLink" class="imgLightbox" href="#">
+                        <img src="assets/Sketch-eyeball - 2.jpg">
+                    </a>
+                    <h4 id="desc3" class="img-desc">desc</h4>
+                </section>
+                <section class="art-pieces" id="art-4">
+                    <a id="imageFourLink" class="imgLightbox" href="#">
+                        <img src="assets/Painting-emerging face.jpg">
+                    </a>
+                    <h4 id="desc4"class="img-desc">desc</h4>
+                </section>
+                <section class="art-pieces" id="art-10">
+                    <a id="imageTenLink" class="imgLightbox" href="#">
+                        <div id="slideshow">
+                            <img class="showing" src="">
+                            <img class="VanGogh" src="assets/VanGoghLamp-1.jpg">
+                            <img class="VanGogh" src="assets/VanGoghLamp-2.jpg">
+                            <img class="VanGogh" src="assets/VanGoghLamp-3.jpg">
+                            <img class="VanGogh" src="assets/VanGoghLamp-4.jpg">
+                        </div>
+                    </a>
+                    <h4 id="desc10" class="img-desc">desc</h4>
+                </section>
             </section>
-            <section class="art-pieces" id="art-3">
-                <img src="assets/Sketch-eyeball - 2.jpg">
-                <h4 id="desc3" class="img-desc">desc</h4>
+            <section id="view-more-art">
+                <a href="artwork.html"><h3>View More</h3></a>
             </section>
-            <section class="art-pieces" id="art-4">
-                <img src="assets/Painting-emerging face.jpg">
-                <h4 id="desc4"class="img-desc">desc</h4>
-            </section>
-        </section>
-        <section id="view-more-art">
-            <a href="artwork.html"><h3>View More</h3></a>
-        </section>
-        <footer>
-            <ul id="contact-icons">
-                <li>
-                    <img id="mail-icon" href="">
-                    
-                </li>
-                <li>
-                    <img id="LinkedIn-icon" href="">
-                    
-                </li>
-            </ul>
-            <a id="top-link" href="#">Back to Top</a>
-            <p id="copyright">&copy 2024 Erica Talley</p>
-        </footer>
-        <script type="text/javascript" src="JS/jquery-3.7.1.min.js"></script> 
-        <script type="text/javascript" src="JS/mods.js"></script>
+            <footer>
+                <ul id="contact-icons">
+                    <li>
+                        <img id="mail-icon" href="">
+                        
+                    </li>
+                    <li>
+                        <img id="LinkedIn-icon" href="">
+                        
+                    </li>
+                </ul>
+                <a id="top-link" href="#">Back to Top</a>
+                <p id="copyright">&copy 2024 Erica Talley</p>
+            </footer>
+            <script type="text/javascript" src="JS/jquery-3.7.1.min.js"></script> 
+            <script type="text/javascript" src="JS/mods.js"></script>
     </body>
 </html>
