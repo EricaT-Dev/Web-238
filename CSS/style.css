@@ -225,6 +225,15 @@ footer{
 .show{
     display: block;
 }
+.toolTipReplacement{
+    position: relative;
+    max-width: 60%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    padding: 2em;
+    color: #91e39b;
+}
     /*media queries*/
     @media(min-width:768px){
         .navigation{
@@ -266,6 +275,12 @@ footer{
             left: 35%;
             right: 35%;
         }
+        .toolTipReplacement{
+            max-width: 35%;
+            top: 16%;
+            left: 35%;
+            right: 35%;
+        }
         #closeOverlay{
             top: 20%;
             left: 90%;
@@ -274,4 +289,5 @@ footer{
             max-width: 100%;
             display: none;
         }
+        
     }
