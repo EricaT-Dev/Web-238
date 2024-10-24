@@ -86,33 +86,33 @@ $(document).ready(function(){
         $("#overlay").css("display", "none")
         $("#closeOverlay").css("display", "none")
         $(".lightBox-imgs").css("display", "none")
-        $("#art-10").removeClass("darken")
+        $("#slideshow").removeClass("darken")
         $("#art-10").addClass("show")
     })
     //adds images for each clicked
     $("#imageOneLink").click(function(){
         $("#lightBox-img1").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageTwoLink").click(function(){
         $("#lightBox-img2").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageThreeLink").click(function(){
         $("#lightBox-img3").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageFourLink").click(function(){
         $("#lightBox-img4").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageFiveLink").click(function(){
         $("#lightBox-img5").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageSixLink").click(function(){
         $("#lightBox-img6").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageSevenLink").click(function(){
         $("#lightBox-img7").css("display", "block")
@@ -120,15 +120,15 @@ $(document).ready(function(){
     })
     $("#imageEightLink").click(function(){
         $("#lightBox-img8").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageNineLink").click(function(){
         $("#lightBox-img9").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     $("#imageTenLink").click(function(){
         $("#lightBox-img10").css("display", "block")
-        $("#art-10").addClass("darken")
+        $("#slideshow").addClass("darken")
     })
     //resize clickable images on hover
     $(".art-pieces").hover(function(){
@@ -142,9 +142,8 @@ $(document).ready(function(){
         )
     })
     //slideshow for Vangoh Lamp
-    $(document).ready(function(){
+
         slideShow();
-      });
       function slideShow() {
         var current = $('#slideshow .showing');
         var next = current.next().length ? current.next() : 
@@ -157,18 +156,18 @@ $(document).ready(function(){
       }
     //tooltips to add description in lightbox
     $(".lightBox-imgs").hover(function(){
-        var hoverText = $(this).attr("alt");
-        $(this)
-            .data('tipText', hoverText)
-            .removeAttr('alt');
-        $('<h3 class="toolTipReplacement"></h3>')
-        .text(hoverText)
-        .appendTo('#overlay')
-    },
-    function(){
-        $(this)
-            .attr('alt', $(this).data('tipText'))
-            $('.toolTipReplacement').remove();
-    }    
-)
+            var hoverText = $(this).attr("alt");
+            $(this)
+                .data('tipText', hoverText)
+                .removeAttr('alt');
+            $('<h3 class="toolTipReplacement"></h3>')
+            .text(hoverText)
+            .appendTo('#overlay')
+        },
+        function(){
+            $(this)
+                .attr('alt', $(this).data('tipText'))
+                $('.toolTipReplacement').remove();
+        }    
+    )
 });
