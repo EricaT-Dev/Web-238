@@ -155,4 +155,20 @@ $(document).ready(function(){
         
         setTimeout(slideShow, 2500);
       }
+    //tooltips to add description in lightbox
+    $(".lightBox-imgs").hover(function(){
+        var hoverText = $(this).attr("alt");
+        $(this)
+            .data('tipText', hoverText)
+            .removeAttr('alt');
+        $('<h3 class="toolTipReplacement"></h3>')
+        .text(hoverText)
+        .appendTo('#overlay')
+    },
+    function(){
+        $(this)
+            .attr('alt', $(this).data('tipText'))
+            $('.toolTipReplacement').remove();
+    }    
+)
 });
