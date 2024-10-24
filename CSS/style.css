@@ -269,7 +269,13 @@ footer{
             display: grid;
             grid-template-columns: 65% 35%;
         }
-        #lightBox-img1, #lightBox-img2, #lightBox-img3, #lightBox-img4, #lightBox-img5, #lightBox-img6, #lightBox-img7, #lightBox-img8, #lightBox-img9, #lightBox-img10{
+        #lightBox-img1{
+            max-width: 28%;
+            top: 16%;
+            left: 35%;
+            right: 35%;
+        }
+        #lightBox-img2, #lightBox-img3, #lightBox-img4, #lightBox-img5, #lightBox-img6, #lightBox-img7, #lightBox-img8, #lightBox-img9, #lightBox-img10{
             max-width: 35%;
             top: 16%;
             left: 35%;
@@ -277,7 +283,7 @@ footer{
         }
         .toolTipReplacement{
             max-width: 35%;
-            top: 16%;
+            top: 10%;
             left: 35%;
             right: 35%;
         }
